@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prescription Chart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Prescription / Diet Chart</h1>
+
+    <!-- Live Date -->
+    <p><strong>Date:</strong> <span id="currentDate"></span></p>
+
+    <!-- Signature Pad -->
+    <div class="signature-section">
+      <label><strong>Signature of Dietician:</strong></label>
+      <br>
+      <canvas id="signature-pad" width="300" height="150"></canvas>
+      <br>
+      <button onclick="clearSignature()">Clear Signature</button>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button onclick="generatePDF()">Save as PDF</button>
+      <button onclick="generatePDF()">Share as PDF</button>
+      <button onclick="clearForm()">Clear All</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="signature_pad.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
