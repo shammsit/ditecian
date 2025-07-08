@@ -1,37 +1,30 @@
-// Set Live Date
+// Set current date
 document.getElementById("currentDate").innerText = new Date().toLocaleDateString();
 
-// Clear Form Fields
-function clearForm() {
-  const inputs = document.querySelectorAll("input, textarea");
-  inputs.forEach((input) => {
-    if (input.type === "file") input.value = "";
-    else input.value = "";
-  });
-
-  // Clear signature preview
-  const preview = document.getElementById("signature-preview");
-  preview.src = "";
-  preview.style.display = "none";
-}
-
-// Generate PDF and download/share
+// PDF Generation
 function generatePDF() {
-  const element = document.body;
-
-  html2pdf()
-    .set({
-      margin: 10,
-      filename: 'prescription.pdf',
-      image: { type: 'jpeg', quality: 0.98 },
-      html2canvas: { scale: 2 },
-      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-    })
-    .from(element)
-    .save();
+  const element = document.getElementById("pdf-content");
+  const opt = {
+    margin: 0,
+    filename: 'prescription.pdf',
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: { scale: 2 },
+    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+    pagebreak: { mode: ['css', 'legacy'] }
+  };
+  html2pdf().set(opt).from(element).save();
 }
 
-// Show signature preview
+// Clear all fields
+function clearForm() {
+  document.querySelectorAll("input[type='text'], textarea").forEach(el => el.value = '');
+  document.getElementById("signature-upload").value = '';
+  const img = document.getElementById("signature-preview");
+  img.src = '';
+  img.style.display = "none";
+}
+
+// Handle signature upload
 document.getElementById("signature-upload").addEventListener("change", function () {
   const file = this.files[0];
   if (file) {
