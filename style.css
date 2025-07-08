@@ -5,21 +5,50 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
   background: white;
-  padding: 20px;
+  padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-canvas {
-  border: 1px solid #000;
-  background: #fff;
+fieldset {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 95%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+label {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.buttons {
+  margin-top: 20px;
 }
 
 button {
-  margin: 10px 5px;
+  margin: 5px;
   padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
