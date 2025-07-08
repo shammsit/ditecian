@@ -1,19 +1,27 @@
-// Live Date
+// Set Live Date
 document.getElementById("currentDate").innerText = new Date().toLocaleDateString();
 
-// Signature Pad Setup
-const canvas = document.getElementById('signature-pad');
-const signaturePad = new SignaturePad(canvas);
-
-function clearSignature() {
-  signaturePad.clear();
-}
-
-// Placeholders for next steps
-function generatePDF() {
-  alert("PDF generation will be added in next step!");
-}
-
+// Clear Form Fields
 function clearForm() {
-  alert("Form clear functionality coming soon!");
+  const inputs = document.querySelectorAll("input, textarea");
+  inputs.forEach((input) => input.value = "");
+  
+  // Clear uploaded signature
+  document.getElementById("signature-upload").value = "";
+}
+
+// Generate PDF and Download (or Share)
+function generatePDF() {
+  const element = document.body;
+
+  html2pdf()
+    .set({
+      margin: 10,
+      filename: 'prescription.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    })
+    .from(element)
+    .save();
 }
