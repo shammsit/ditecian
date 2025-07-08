@@ -1,54 +1,54 @@
 body {
   font-family: Arial, sans-serif;
+  background: #f0f0f0;
   padding: 20px;
-  background-color: #f6f6f6;
 }
 
-.container {
-  max-width: 900px;
+.page {
+  background: #fff;
+  width: 210mm;
+  height: 297mm;
+  padding: 20mm;
   margin: auto;
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  page-break-after: always;
 }
 
-fieldset {
-  margin-top: 20px;
-  padding: 15px;
-  border: 1px solid #ccc;
+.line {
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100px;
 }
 
-input[type="text"],
-input[type="number"],
-textarea {
-  width: 95%;
-  padding: 8px;
-  margin-top: 4px;
+.line.short {
+  width: 60px;
+}
+
+.full-line {
+  width: 100%;
   margin-bottom: 10px;
-  border-radius: 5px;
-  border: 1px solid #aaa;
 }
 
-label {
-  display: inline-block;
+table {
+  width: 100%;
+  border-collapse: collapse;
   margin-top: 10px;
 }
 
-.buttons {
+td {
+  padding: 6px;
+}
+
+.controls {
+  text-align: center;
   margin-top: 20px;
 }
 
 button {
+  padding: 10px 20px;
   margin: 5px;
-  padding: 10px 15px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
 }
