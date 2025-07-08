@@ -1,37 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Prescription Chart</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Prescription / Diet Chart</h1>
+<form id="diet-form">
+  <fieldset>
+    <legend><strong>Daily Food Ration Chart</strong></legend>
 
-    <!-- Live Date -->
-    <p><strong>Date:</strong> <span id="currentDate"></span></p>
+    <label>Name:</label> <input type="text" name="name"><br><br>
+    <label>Age:</label> <input type="number" name="age">
+    <label>Height:</label> <input type="text" name="height">
+    <label>Weight:</label> <input type="text" name="weight">
+    <label>BMI:</label> <input type="text" name="bmi"><br><br>
 
-    <!-- Signature Pad -->
-    <div class="signature-section">
-      <label><strong>Signature of Dietician:</strong></label>
-      <br>
-      <canvas id="signature-pad" width="300" height="150"></canvas>
-      <br>
-      <button onclick="clearSignature()">Clear Signature</button>
-    </div>
+    <label>Energy:</label> <input type="text" name="energy"> Kcal
+    <label>Protein:</label> <input type="text" name="protein"> gms
+    <label>Fat:</label> <input type="text" name="fat"> gms
+    <label>Carbohydrate:</label> <input type="text" name="carb"> gms<br><br>
 
-    <!-- Buttons -->
-    <div class="buttons">
-      <button onclick="generatePDF()">Save as PDF</button>
-      <button onclick="generatePDF()">Share as PDF</button>
-      <button onclick="clearForm()">Clear All</button>
-    </div>
-  </div>
+    <label>1. Cereals:</label> <input type="text" name="cereals"> gms<br>
+    <label>2. Dal & Dal Products:</label> <input type="text" name="dal"> gms<br>
+    <label>3. Green Leafy Vegetables:</label> <input type="text" name="greenLeafy"> gms<br>
+    <label>4. Other Vegetables:</label> <input type="text" name="otherVeg"> gms<br>
+    <label>5. Fruits:</label> <input type="text" name="fruits"> gms<br>
+    <label>6. Egg (Only White Portion):</label> <input type="text" name="egg"> gms<br>
+    <label>7. Fish:</label> <input type="text" name="fish"> gms<br>
+    <label>   or Chicken:</label> <input type="text" name="chicken"> gms<br>
+    <label>8. Milk:</label> <input type="text" name="milk"> gms<br>
+    <label>9. Oil:</label> <input type="text" name="oil"> gms<br><br>
 
-  <!-- Scripts -->
-  <script src="signature_pad.min.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
+    <label><strong>Foods to be Avoided:</strong></label><br>
+    <textarea name="avoid" rows="6" cols="80">Whole milk and its products like Ghee, Cream, Butter, Cheese, Sandesh, Rasogolla...
+    </textarea>
+  </fieldset>
+</form>
