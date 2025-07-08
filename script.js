@@ -4,13 +4,18 @@ document.getElementById("currentDate").innerText = new Date().toLocaleDateString
 // Clear Form Fields
 function clearForm() {
   const inputs = document.querySelectorAll("input, textarea");
-  inputs.forEach((input) => input.value = "");
-  
-  // Clear uploaded signature
-  document.getElementById("signature-upload").value = "";
+  inputs.forEach((input) => {
+    if (input.type === "file") input.value = "";
+    else input.value = "";
+  });
+
+  // Clear signature preview
+  const preview = document.getElementById("signature-preview");
+  preview.src = "";
+  preview.style.display = "none";
 }
 
-// Generate PDF and Download (or Share)
+// Generate PDF and download/share
 function generatePDF() {
   const element = document.body;
 
@@ -25,3 +30,17 @@ function generatePDF() {
     .from(element)
     .save();
 }
+
+// Show signature preview
+document.getElementById("signature-upload").addEventListener("change", function () {
+  const file = this.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      const img = document.getElementById("signature-preview");
+      img.src = e.target.result;
+      img.style.display = "block";
+    };
+    reader.readAsDataURL(file);
+  }
+});
