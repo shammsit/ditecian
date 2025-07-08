@@ -1,54 +1,88 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f0f0f0;
   padding: 20px;
+  background: #fff;
 }
 
 .page {
-  background: #fff;
-  width: 210mm;
-  height: 297mm;
-  padding: 20mm;
-  margin: auto;
-  margin-bottom: 20px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-  box-sizing: border-box;
   page-break-after: always;
+  margin-bottom: 50px;
 }
 
-.line {
-  border: none;
-  border-bottom: 1px solid #000;
-  width: 100px;
+h1, h2, h3 {
+  text-align: center;
+  margin: 0;
 }
 
-.line.short {
-  width: 60px;
+.subheading {
+  text-align: center;
+  font-size: 14px;
 }
 
-.full-line {
-  width: 100%;
-  margin-bottom: 10px;
+.form-group {
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form-group label {
+  min-width: 100px;
+}
+
+.form-group input[type="text"] {
+  min-width: 80px;
+  padding: 3px;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
+  margin: 10px 0;
+}
+
+table td {
+  padding: 5px;
+  vertical-align: top;
+}
+
+ol {
+  margin: 0 20px;
+}
+
+.signature label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+#signaturePreview {
+  display: block;
+  max-height: 100px;
   margin-top: 10px;
 }
 
-td {
-  padding: 6px;
-}
-
-.controls {
-  text-align: center;
+.buttons {
   margin-top: 20px;
+  display: flex;
+  gap: 10px;
 }
 
-button {
-  padding: 10px 20px;
-  margin: 5px;
+.buttons button {
+  padding: 10px 15px;
   font-size: 16px;
   cursor: pointer;
+}
+
+.centered {
+  text-align: center;
+}
+
+.menu td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.menu th {
+  background: #eee;
+  padding: 8px;
 }
