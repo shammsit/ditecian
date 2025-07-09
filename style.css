@@ -19,7 +19,7 @@ body {
   padding: 0mm 7mm 0mm 7mm;
   margin-top: 0 !important;
 
-  background: white;
+  background: DarkCyan;
   box-sizing: border-box;
   page-break-after: always;
   position: relative;
@@ -34,7 +34,7 @@ h1, h2, h3 {
   margin: 0;
 }
 .contact-card {
-  background-color: MediumAquaMarine;
+  background-color: Teal;
   padding: 10px 15px;
   border-radius: 6px;
   color: #000; /* Optional: ensures text is readable */
