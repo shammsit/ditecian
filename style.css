@@ -1,6 +1,6 @@
 body {
-  font-family: 'Georgia', serif;
-  background: white;
+  font-family: Arial, sans-serif;
+  background: #f0f8ff;
   color: black;
   margin: 0;
   padding: 0;
@@ -27,14 +27,13 @@ h1, h2, h3 {
   text-align: center;
   margin: 10px 0;
   font-weight: bold;
-  color: black !important;
 }
 
 .contact-card {
-  background-color: #e6e6fa !important; /* Lavender */
+  background-color: #a8d5ba; /* green like your screenshot */
   padding: 10px 15px;
   border-radius: 6px;
-  color: black !important;
+  color: #000;
   text-align: center;
 }
 
@@ -42,7 +41,6 @@ h1, h2, h3 {
   font-size: 14px;
   margin-top: 5px;
   line-height: 1.4;
-  color: black !important;
 }
 
 .form-group {
@@ -56,7 +54,6 @@ h1, h2, h3 {
 .form-group label {
   min-width: 80px;
   font-weight: bold;
-  color: black !important;
 }
 
 .form-group input[type="text"] {
@@ -64,7 +61,6 @@ h1, h2, h3 {
   padding: 2px 5px;
   font-family: inherit;
   font-size: 14px;
-  color: black !important;
 }
 
 table {
@@ -78,18 +74,14 @@ table td, table th {
   padding: 6px;
   vertical-align: top;
   border: 1px solid #333;
-  color: black !important;
 }
 
 ol {
   margin: 0 25px;
   font-size: 14px;
   line-height: 1.6;
-  color: black !important;
-}
-
-ol li {
-  color: black !important;
+  color: red;
+  font-weight: bold;
 }
 
 .centered {
@@ -100,7 +92,6 @@ ol li {
   display: block;
   margin-top: 10px;
   font-weight: bold;
-  color: black !important;
 }
 
 #signaturePreview {
@@ -135,7 +126,6 @@ ol li {
   font-size: 14px;
 }
 
-/* Print Styling */
 @media print {
   html, body {
     width: 210mm;
