@@ -127,5 +127,8 @@ table, .form-group, ol {
     align-items: center;
     gap: 5px;
   }
-}
+  .buttons,
+  .thankyou {
+    display: none !important;
+  }
 }
