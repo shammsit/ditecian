@@ -1,5 +1,5 @@
 // Set current date
-document.getElementById("currentDate").innerText = new Date().toLocaleDateString('en-GB').replace(/\//g, '/');
+document.getElementById("currentDate").innerText = new Date().toLocaleDateString('en-GB');
 
 // Signature preview
 document.getElementById("signatureUpload").addEventListener("change", function () {
@@ -13,11 +13,9 @@ document.getElementById("signatureUpload").addEventListener("change", function (
   }
 });
 
-// Save as PDF (with buttons hidden during render)
-
+// Save as PDF
 function saveAsPDF() {
   window.scrollTo(0, 0);
-
   const buttons = document.querySelector('.buttons');
   const thankyou = document.querySelector('.thankyou');
   buttons.style.display = 'none';
@@ -75,7 +73,7 @@ async function sharePDF() {
   }
 }
 
-// Clear all fields and reset signature
+// Clear All Inputs
 function clearAll() {
   document.querySelectorAll("input[type='text']").forEach(input => input.value = "");
   document.getElementById("signatureUpload").value = "";
