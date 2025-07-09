@@ -17,8 +17,7 @@ body {
 .page {
   width: 190mm;
   min-height: 297mm;
-  padding: 10mm 10mm;
-  margin-top: 0 !important;
+  padding: 10mm;
   background: white;
   box-sizing: border-box;
   page-break-after: always;
@@ -28,13 +27,14 @@ h1, h2, h3 {
   text-align: center;
   margin: 10px 0;
   font-weight: bold;
+  color: black !important;
 }
 
 .contact-card {
-  background-color: #e6e6fa; /* Lavender */
+  background-color: #e6e6fa !important; /* Lavender */
   padding: 10px 15px;
   border-radius: 6px;
-  color: #000;
+  color: black !important;
   text-align: center;
 }
 
@@ -42,6 +42,7 @@ h1, h2, h3 {
   font-size: 14px;
   margin-top: 5px;
   line-height: 1.4;
+  color: black !important;
 }
 
 .form-group {
@@ -55,6 +56,7 @@ h1, h2, h3 {
 .form-group label {
   min-width: 80px;
   font-weight: bold;
+  color: black !important;
 }
 
 .form-group input[type="text"] {
@@ -62,6 +64,7 @@ h1, h2, h3 {
   padding: 2px 5px;
   font-family: inherit;
   font-size: 14px;
+  color: black !important;
 }
 
 table {
@@ -75,13 +78,18 @@ table td, table th {
   padding: 6px;
   vertical-align: top;
   border: 1px solid #333;
+  color: black !important;
 }
 
 ol {
   margin: 0 25px;
   font-size: 14px;
   line-height: 1.6;
-  color: #000;
+  color: black !important;
+}
+
+ol li {
+  color: black !important;
 }
 
 .centered {
@@ -92,6 +100,7 @@ ol {
   display: block;
   margin-top: 10px;
   font-weight: bold;
+  color: black !important;
 }
 
 #signaturePreview {
@@ -115,6 +124,7 @@ ol {
   font-family: inherit;
   border: 1px solid #666;
   background: #f4f4f4;
+  color: black;
 }
 
 .thankyou {
