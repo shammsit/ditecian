@@ -19,6 +19,9 @@ document.getElementById("signatureUpload").addEventListener("change", function (
 
 // Save as PDF
 function saveAsPDF() {
+  const buttons = document.querySelector('.buttons');
+  buttons.classList.add('hide-in-pdf');
+
   const element = document.getElementById("pdf-content");
   const opt = {
     margin: 0,
@@ -29,11 +32,16 @@ function saveAsPDF() {
     pagebreak: { mode: ['css'] }
   };
 
-  html2pdf().set(opt).from(element).save();
+  html2pdf().set(opt).from(element).save().then(() => {
+    buttons.classList.remove('hide-in-pdf');
+  });
 }
 
 // Share PDF
 async function sharePDF() {
+  const buttons = document.querySelector('.buttons');
+  buttons.classList.add('hide-in-pdf');
+
   const element = document.getElementById("pdf-content");
   const opt = {
     margin: 0,
@@ -45,6 +53,7 @@ async function sharePDF() {
   };
 
   const blob = await html2pdf().set(opt).from(element).outputPdf('blob');
+  buttons.classList.remove('hide-in-pdf');
 
   if (navigator.canShare && navigator.canShare({ files: [new File([blob], "diet_chart.pdf", { type: "application/pdf" })] })) {
     const file = new File([blob], "diet_chart.pdf", { type: "application/pdf" });
