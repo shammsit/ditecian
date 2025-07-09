@@ -4,11 +4,6 @@ body {
   margin: 0;
   padding: 0;
 }
-html2canvas: {
-  scale: 2,
-  useCORS: true,
-  backgroundColor: '#ffffff'
-}
 #pdf-content {
   margin: 0 auto;
   max-width: 210mm;
