@@ -4,13 +4,21 @@ body {
   margin: 0;
   padding: 0;
 }
-
+html2canvas: {
+  scale: 2,
+  useCORS: true,
+  backgroundColor: '#ffffff'
+}
 #pdf-content {
-  margin: 20px auto;
-  max-width: 800px;
+  margin: 0 auto;
+  max-width: 210mm;
 }
 
 .page {
+  transform: scale(0.98);
+  transform-origin: top left;
+  page-break-inside: avoid;
+  break-inside: avoid;
   width: 210mm;
   height: 297mm;
   padding: 20mm;
@@ -66,7 +74,10 @@ ol {
   display: block;
   margin-top: 10px;
 }
-
+table, .form-group, ol {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
 #signaturePreview {
   display: block;
   max-height: 100px;
@@ -102,7 +113,10 @@ ol {
 }
 
 @media print {
-  .buttons, .thankyou {
-    display: none;
+  html, body {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
   }
 }
