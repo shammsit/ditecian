@@ -1,13 +1,12 @@
 body {
   font-family: Arial, sans-serif;
   background: #e6f2f5; /* Light medical background */
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 #pdf-content {
-  width: 210mm; /* A4 width */
-  min-height: 297mm; /* A4 height */
+  width: 210mm;
   margin: auto;
   background: white;
 }
@@ -73,10 +72,12 @@ ol {
 }
 
 .buttons {
-  margin-top: 20px;
+  margin: 20px auto;
   display: flex;
   gap: 10px;
   justify-content: center;
+  padding-top: 20px; /* At least 2 cm above and below visually on screen */
+  padding-bottom: 20px;
 }
 
 .buttons button {
@@ -96,4 +97,9 @@ ol {
 .menu th {
   background: #eee;
   padding: 5px;
+}
+
+/* Hide buttons in PDF (when exporting) */
+.hide-in-pdf {
+  display: none !important;
 }
