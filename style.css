@@ -14,7 +14,9 @@ body {
 .page {
   width: 210mm;
   height: 297mm;
-  padding: 20mm;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+
   background: white;
   box-sizing: border-box;
   page-break-after: always;
