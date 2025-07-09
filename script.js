@@ -20,7 +20,11 @@ function saveAsPDF() {
     margin: [0, 0],
     filename: 'diet_chart.pdf',
     image: { type: 'jpeg', quality: 0.98 },
-    html2canvas: { scale: 2, useCORS: true },
+    html2canvas: {
+      scale: 2,
+      useCORS: true,
+      backgroundColor: '#ffffff' // Ensures white background in output
+    },
     jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
     pagebreak: { mode: ['css', 'legacy'] }
   };
@@ -34,7 +38,11 @@ async function sharePDF() {
     margin: [0, 0],
     filename: 'diet_chart.pdf',
     image: { type: 'jpeg', quality: 0.98 },
-    html2canvas: { scale: 2, useCORS: true },
+    html2canvas: {
+      scale: 2,
+      useCORS: true,
+      backgroundColor: '#ffffff'
+    },
     jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
     pagebreak: { mode: ['css', 'legacy'] }
   };
@@ -53,7 +61,7 @@ async function sharePDF() {
   }
 }
 
-// Clear all
+// Clear all fields and reset signature
 function clearAll() {
   document.querySelectorAll("input[type='text']").forEach(input => input.value = "");
   document.getElementById("signatureUpload").value = "";
