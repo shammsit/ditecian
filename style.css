@@ -108,10 +108,24 @@ table, .form-group, ol {
 }
 
 @media print {
-  html, body {
-    width: 210mm;
-    height: 297mm;
-    margin: 0;
-    padding: 0;
+  * {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
   }
+
+  input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: auto;
+  }
+
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+  }
+}
 }
