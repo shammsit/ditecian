@@ -8,20 +8,20 @@ body {
 #pdf-content {
   margin: 0 auto;
   max-width: 210mm;
-  width: 210mm;
+  width: 190mm;
 }
 
 .page {
-  width: 210mm;
+  width: 190mm;
   height: 297mm;
-  padding-top: 0 !important;
+  padding: 10mm;
   margin-top: 0 !important;
 
-  background: white;
+  background: blue;
   box-sizing: border-box;
   page-break-after: always;
   position: relative;
-  transform: scale(0.98);
+  transform: none !important;
   transform-origin: top left;
   page-break-inside: avoid;
   break-inside: avoid;
