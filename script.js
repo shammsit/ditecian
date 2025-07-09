@@ -14,7 +14,10 @@ document.getElementById("signatureUpload").addEventListener("change", function (
 });
 
 // Save as PDF (with buttons hidden during render)
+
 function saveAsPDF() {
+  window.scrollTo(0, 0);
+
   const buttons = document.querySelector('.buttons');
   const thankyou = document.querySelector('.thankyou');
   buttons.style.display = 'none';
@@ -42,6 +45,8 @@ function saveAsPDF() {
 
 // Share PDF
 async function sharePDF() {
+  window.scrollTo(0, 0);
+
   const element = document.getElementById("pdf-content");
   const opt = {
     margin: [0, 0],
