@@ -16,7 +16,7 @@ body {
 .page {
   width: 190mm;
   height: 297mm;
-  padding: 10mm 7mm;
+  padding: 0mm 7mm 7.5mm 7mm;
   margin-top: 0 !important;
 
   background: white;
@@ -117,8 +117,9 @@ table, .form-group, ol {
   html, body {
     width: 210mm;
     height: 297mm;
-    margin: 0;
-    padding: 0;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+
   }
 
   * {
