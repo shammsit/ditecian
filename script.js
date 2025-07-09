@@ -21,13 +21,14 @@ document.getElementById("signatureUpload").addEventListener("change", function (
 function saveAsPDF() {
   const element = document.getElementById("pdf-content");
   const opt = {
-    margin: [10, 10, 10, 10],
+    margin: 0,
     filename: 'diet_chart.pdf',
     image: { type: 'jpeg', quality: 0.98 },
     html2canvas: { scale: 2, useCORS: true },
     jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-    pagebreak: { mode: ['css', 'legacy'], before: '.page' }
+    pagebreak: { mode: ['css'] }
   };
+
   html2pdf().set(opt).from(element).save();
 }
 
@@ -35,12 +36,12 @@ function saveAsPDF() {
 async function sharePDF() {
   const element = document.getElementById("pdf-content");
   const opt = {
-    margin: [10, 10, 10, 10],
+    margin: 0,
     filename: 'diet_chart.pdf',
     image: { type: 'jpeg', quality: 0.98 },
     html2canvas: { scale: 2, useCORS: true },
     jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-    pagebreak: { mode: ['css', 'legacy'], before: '.page' }
+    pagebreak: { mode: ['css'] }
   };
 
   const blob = await html2pdf().set(opt).from(element).outputPdf('blob');
