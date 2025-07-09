@@ -4,16 +4,14 @@ body {
   margin: 0;
   padding: 0;
 }
+
 #pdf-content {
   margin: 0 auto;
   max-width: 210mm;
+  width: 210mm;
 }
 
 .page {
-  transform: scale(0.98);
-  transform-origin: top left;
-  page-break-inside: avoid;
-  break-inside: avoid;
   width: 210mm;
   height: 297mm;
   padding: 20mm;
@@ -21,6 +19,10 @@ body {
   box-sizing: border-box;
   page-break-after: always;
   position: relative;
+  transform: scale(0.98);
+  transform-origin: top left;
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
 
 h1, h2, h3 {
@@ -38,6 +40,7 @@ h1, h2, h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  align-items: center;
 }
 
 .form-group label {
@@ -65,14 +68,16 @@ ol {
   margin: 0 20px;
 }
 
-.signature label {
-  display: block;
-  margin-top: 10px;
-}
 table, .form-group, ol {
   break-inside: avoid;
   page-break-inside: avoid;
 }
+
+.signature label {
+  display: block;
+  margin-top: 10px;
+}
+
 #signaturePreview {
   display: block;
   max-height: 100px;
@@ -103,11 +108,15 @@ table, .form-group, ol {
   color: #555;
 }
 
-.buttons, .thankyou {
-  /* Will not be printed */
-}
-
+/* Hide interactive elements in print */
 @media print {
+  html, body {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
+  }
+
   * {
     margin: 0 !important;
     padding: 0 !important;
@@ -115,20 +124,18 @@ table, .form-group, ol {
   }
 
   input {
-    border: none;
-    background: transparent;
-    outline: none;
-    width: auto;
+    border: none !important;
+    background: transparent !important;
+    outline: none !important;
   }
 
-  .form-group {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 5px;
-  }
   .buttons,
   .thankyou {
     display: none !important;
+  }
+
+  .form-group {
+    align-items: center;
+    gap: 5px;
   }
 }
