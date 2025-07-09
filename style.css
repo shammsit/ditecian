@@ -1,26 +1,27 @@
 body {
   font-family: Arial, sans-serif;
-  background: #e6f2f5; /* Light medical background */
+  background: #e6f2f5;
   margin: 0;
   padding: 0;
 }
 
 #pdf-content {
-  width: 210mm;
-  margin: auto;
   background: white;
+  width: 210mm;
+  min-height: 297mm;
+  margin: auto;
+  padding: 20mm;
+  box-sizing: border-box;
 }
 
 .page {
-  width: 210mm;
-  height: 297mm;
-  padding: 20mm;
-  box-sizing: border-box;
+  width: 100%;
   page-break-after: always;
 }
 
 h1, h2, h3 {
   text-align: center;
+  margin: 0;
 }
 
 .subheading {
@@ -32,15 +33,15 @@ h1, h2, h3 {
   margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
 }
 
 .form-group label {
-  min-width: 60px;
+  min-width: 100px;
 }
 
 .form-group input[type="text"] {
-  min-width: 70px;
+  min-width: 80px;
   padding: 3px;
 }
 
@@ -52,8 +53,8 @@ table {
 
 table td, table th {
   padding: 5px;
-  border: 1px solid #ccc;
   vertical-align: top;
+  border: 1px solid #ccc;
 }
 
 ol {
@@ -62,7 +63,7 @@ ol {
 
 .signature label {
   display: block;
-  margin-top: 10px;
+  margin: 10px 0 5px;
 }
 
 #signaturePreview {
@@ -72,11 +73,11 @@ ol {
 }
 
 .buttons {
-  margin: 20px auto;
+  margin-top: 40px;
   display: flex;
   gap: 10px;
   justify-content: center;
-  padding-top: 20px; /* At least 2 cm above and below visually on screen */
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -86,20 +87,15 @@ ol {
   cursor: pointer;
 }
 
-.centered {
+.footer-message {
   text-align: center;
+  margin: 30px 0;
+  font-size: 18px;
+  color: #333;
 }
 
-.menu td {
-  padding: 5px;
-}
-
-.menu th {
-  background: #eee;
-  padding: 5px;
-}
-
-/* Hide buttons in PDF (when exporting) */
-.hide-in-pdf {
-  display: none !important;
+@media print {
+  .buttons, .footer-message {
+    display: none !important;
+  }
 }
