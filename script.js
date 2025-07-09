@@ -1,11 +1,5 @@
-// Set current date in dd/mm/yy format
-const today = new Date();
-const dd = String(today.getDate()).padStart(2, '0');
-const mm = String(today.getMonth() + 1).padStart(2, '0');
-const yy = String(today.getFullYear()).slice(-2);
-document.getElementById("currentDate").innerText = `${dd}/${mm}/${yy}`;
+document.getElementById("currentDate").innerText = new Date().toLocaleDateString('en-GB');
 
-// Signature preview
 document.getElementById("signatureUpload").addEventListener("change", function () {
   const file = this.files[0];
   if (file) {
@@ -17,11 +11,7 @@ document.getElementById("signatureUpload").addEventListener("change", function (
   }
 });
 
-// Save as PDF
 function saveAsPDF() {
-  const buttons = document.querySelector('.buttons');
-  buttons.classList.add('hide-in-pdf');
-
   const element = document.getElementById("pdf-content");
   const opt = {
     margin: 0,
@@ -29,19 +19,12 @@ function saveAsPDF() {
     image: { type: 'jpeg', quality: 0.98 },
     html2canvas: { scale: 2, useCORS: true },
     jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-    pagebreak: { mode: ['css'] }
+    pagebreak: { mode: ['avoid-all'] }
   };
-
-  html2pdf().set(opt).from(element).save().then(() => {
-    buttons.classList.remove('hide-in-pdf');
-  });
+  html2pdf().set(opt).from(element).save();
 }
 
-// Share PDF
 async function sharePDF() {
-  const buttons = document.querySelector('.buttons');
-  buttons.classList.add('hide-in-pdf');
-
   const element = document.getElementById("pdf-content");
   const opt = {
     margin: 0,
@@ -49,11 +32,10 @@ async function sharePDF() {
     image: { type: 'jpeg', quality: 0.98 },
     html2canvas: { scale: 2, useCORS: true },
     jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-    pagebreak: { mode: ['css'] }
+    pagebreak: { mode: ['avoid-all'] }
   };
 
   const blob = await html2pdf().set(opt).from(element).outputPdf('blob');
-  buttons.classList.remove('hide-in-pdf');
 
   if (navigator.canShare && navigator.canShare({ files: [new File([blob], "diet_chart.pdf", { type: "application/pdf" })] })) {
     const file = new File([blob], "diet_chart.pdf", { type: "application/pdf" });
@@ -67,7 +49,6 @@ async function sharePDF() {
   }
 }
 
-// Clear All
 function clearAll() {
   document.querySelectorAll("input[type='text']").forEach(input => input.value = "");
   document.getElementById("signatureUpload").value = "";
