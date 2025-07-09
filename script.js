@@ -13,8 +13,13 @@ document.getElementById("signatureUpload").addEventListener("change", function (
   }
 });
 
-// Save as PDF
+// Save as PDF (with buttons hidden during render)
 function saveAsPDF() {
+  const buttons = document.querySelector('.buttons');
+  const thankyou = document.querySelector('.thankyou');
+  buttons.style.display = 'none';
+  if (thankyou) thankyou.style.display = 'none';
+
   const element = document.getElementById("pdf-content");
   const opt = {
     margin: [0, 0],
@@ -23,12 +28,16 @@ function saveAsPDF() {
     html2canvas: {
       scale: 2,
       useCORS: true,
-      backgroundColor: '#ffffff' // Ensures white background in output
+      backgroundColor: '#ffffff'
     },
     jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
     pagebreak: { mode: ['css', 'legacy'] }
   };
-  html2pdf().set(opt).from(element).save();
+
+  html2pdf().set(opt).from(element).save().then(() => {
+    buttons.style.display = 'flex';
+    if (thankyou) thankyou.style.display = 'block';
+  });
 }
 
 // Share PDF
