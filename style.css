@@ -1,7 +1,7 @@
 body {
   font-family: 'Georgia', serif;
-  background: #fff;
-  color: #000;
+  background: white;
+  color: black;
   margin: 0;
   padding: 0;
 }
@@ -10,13 +10,15 @@ body {
   margin: 0 auto;
   max-width: 210mm;
   width: 190mm;
+  overflow: hidden;
   background: white;
 }
 
 .page {
   width: 190mm;
   min-height: 297mm;
-  padding: 0mm 7mm;
+  padding: 10mm 10mm;
+  margin-top: 0 !important;
   background: white;
   box-sizing: border-box;
   page-break-after: always;
@@ -25,10 +27,11 @@ body {
 h1, h2, h3 {
   text-align: center;
   margin: 10px 0;
+  font-weight: bold;
 }
 
 .contact-card {
-  background-color: #E6E6FA;
+  background-color: #e6e6fa; /* Lavender */
   padding: 10px 15px;
   border-radius: 6px;
   color: #000;
@@ -38,6 +41,7 @@ h1, h2, h3 {
 .subheading {
   font-size: 14px;
   margin-top: 5px;
+  line-height: 1.4;
 }
 
 .form-group {
@@ -49,39 +53,52 @@ h1, h2, h3 {
 }
 
 .form-group label {
-  min-width: 90px;
+  min-width: 80px;
+  font-weight: bold;
 }
 
 .form-group input[type="text"] {
   min-width: 70px;
-  padding: 3px;
+  padding: 2px 5px;
+  font-family: inherit;
+  font-size: 14px;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 10px 0;
+  margin: 15px 0;
+  font-size: 14px;
 }
 
 table td, table th {
   padding: 6px;
-  border: 1px solid #000;
   vertical-align: top;
+  border: 1px solid #333;
 }
 
 ol {
   margin: 0 25px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #000;
+}
+
+.centered {
+  text-align: center;
 }
 
 .signature label {
   display: block;
   margin-top: 10px;
+  font-weight: bold;
 }
 
 #signaturePreview {
   display: block;
-  max-height: 80px;
+  max-height: 100px;
   margin-top: 10px;
+  border: 1px solid #999;
 }
 
 .buttons {
@@ -95,28 +112,49 @@ ol {
   padding: 10px 15px;
   font-size: 16px;
   cursor: pointer;
-}
-
-.centered {
-  text-align: center;
+  font-family: inherit;
+  border: 1px solid #666;
+  background: #f4f4f4;
 }
 
 .thankyou {
   text-align: center;
   margin-top: 20px;
   font-style: italic;
-  color: #444;
+  color: #555;
+  font-size: 14px;
 }
 
+/* Print Styling */
 @media print {
-  input {
-    border: none;
-    background: transparent;
+  html, body {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
+    background: white;
   }
 
   .buttons,
   .thankyou,
   #signatureUpload {
     display: none !important;
+  }
+
+  input {
+    border: none !important;
+    background: transparent !important;
+    outline: none !important;
+    color: black !important;
+  }
+
+  table, .form-group, ol {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .form-group {
+    align-items: center;
+    gap: 5px;
   }
 }
