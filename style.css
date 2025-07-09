@@ -1,6 +1,7 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f0f8ff; /* light medical blue */
+  font-family: 'Georgia', serif;
+  background: white;
+  color: black;
   margin: 0;
   padding: 0;
 }
@@ -10,7 +11,16 @@ body {
   max-width: 210mm;
   width: 190mm;
   overflow: hidden;
+  background: white;
 
+}
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  padding: 2px 4px;
+  font-size: 15px;
+  width: 60px;
 }
 
 .page {
@@ -34,10 +44,20 @@ h1, h2, h3 {
   margin: 0;
 }
 .contact-card {
-  background-color: Lavender;
-  padding: 10px 15px;
-  border-radius: 6px;
-  color: #000; /* Optional: ensures text is readable */
+  padding: 10px 0;
+  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+.contact-card h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+.subheading {
+  font-size: 14px;
+  line-height: 1.5;
 }
 .subheading {
   text-align: center;
@@ -45,32 +65,31 @@ h1, h2, h3 {
 }
 
 .form-group {
-  margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
+  margin: 10px 0;
+  gap: 15px;
 }
 
 .form-group label {
-  min-width: 90px;
+  font-weight: bold;
+  min-width: 80px;
 }
 
-.form-group input[type="text"] {
-  min-width: 70px;
-  padding: 2px;
+.form-group input {
+  min-width: 60px;
 }
-
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 10px 0;
+  margin: 15px 0;
+  font-size: 15px;
 }
 
 table td, table th {
-  padding: 5px;
+  padding: 8px;
   vertical-align: top;
-  border: 1px solid #ccc;
+  border: none; /* remove borders like in PDF */
 }
 
 ol {
@@ -126,6 +145,11 @@ table, .form-group, ol {
     margin-top: 0 !important;
 
   }
+body {
+  font-family: 'Georgia', serif !important;
+  color: black !important;
+  background: white !important;
+}
 
   * {
     margin: 0 !important;
