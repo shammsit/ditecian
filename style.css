@@ -1,21 +1,27 @@
 body {
   font-family: Arial, sans-serif;
-  padding: 20px;
-  background: #e6f2f5; /* Light medical-style background */
+  background: #e6f2f5; /* Light medical background */
+  padding: 0;
+  margin: 0;
+}
+
+#pdf-content {
+  width: 210mm; /* A4 width */
+  min-height: 297mm; /* A4 height */
+  margin: auto;
+  background: white;
 }
 
 .page {
-  background: white;
-  padding: 20px;
-  margin: 0 auto 50px;
-  max-width: 800px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 210mm;
+  height: 297mm;
+  padding: 20mm;
+  box-sizing: border-box;
   page-break-after: always;
 }
 
 h1, h2, h3 {
   text-align: center;
-  margin: 0;
 }
 
 .subheading {
@@ -27,15 +33,15 @@ h1, h2, h3 {
   margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
 }
 
 .form-group label {
-  min-width: 80px;
+  min-width: 60px;
 }
 
 .form-group input[type="text"] {
-  min-width: 80px;
+  min-width: 70px;
   padding: 3px;
 }
 
@@ -57,7 +63,7 @@ ol {
 
 .signature label {
   display: block;
-  margin: 10px 0 5px;
+  margin-top: 10px;
 }
 
 #signaturePreview {
@@ -70,6 +76,7 @@ ol {
   margin-top: 20px;
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 
 .buttons button {
@@ -83,10 +90,10 @@ ol {
 }
 
 .menu td {
-  padding: 8px;
+  padding: 5px;
 }
 
 .menu th {
   background: #eee;
-  padding: 8px;
+  padding: 5px;
 }
