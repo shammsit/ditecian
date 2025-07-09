@@ -1,7 +1,7 @@
 body {
   font-family: 'Georgia', serif;
-  background: white;
-  color: black;
+  background: #fff;
+  color: #000;
   margin: 0;
   padding: 0;
 }
@@ -10,95 +10,67 @@ body {
   margin: 0 auto;
   max-width: 210mm;
   width: 190mm;
-  overflow: hidden;
   background: white;
-
-}
-input[type="text"] {
-  border: none;
-  border-bottom: 1px solid #000;
-  background: transparent;
-  padding: 2px 4px;
-  font-size: 15px;
-  width: 60px;
 }
 
 .page {
   width: 190mm;
-  height: 297mm;
-  padding: 0mm 7mm 0mm 7mm;
-  margin-top: 0 !important;
-
+  min-height: 297mm;
+  padding: 0mm 7mm;
   background: white;
   box-sizing: border-box;
   page-break-after: always;
-  position: relative;
-  transform: none !important;
-  transform-origin: top left;
-  page-break-inside: avoid;
-  break-inside: avoid;
 }
 
 h1, h2, h3 {
   text-align: center;
-  margin: 0;
+  margin: 10px 0;
 }
+
 .contact-card {
-  padding: 10px 0;
-  border-bottom: 1px solid #000;
-  margin-bottom: 10px;
+  background-color: #E6E6FA;
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: #000;
   text-align: center;
-  font-size: 16px;
 }
-.contact-card h1 {
-  margin: 0;
-  font-size: 22px;
-  font-weight: bold;
-}
+
 .subheading {
   font-size: 14px;
-  line-height: 1.5;
-}
-.subheading {
-  text-align: center;
-  font-size: 14px;
+  margin-top: 5px;
 }
 
 .form-group {
+  margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
-  margin: 10px 0;
-  gap: 15px;
+  gap: 10px;
+  align-items: center;
 }
 
 .form-group label {
-  font-weight: bold;
-  min-width: 80px;
+  min-width: 90px;
 }
 
-.form-group input {
-  min-width: 60px;
+.form-group input[type="text"] {
+  min-width: 70px;
+  padding: 3px;
 }
+
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 15px 0;
-  font-size: 15px;
+  margin: 10px 0;
 }
 
 table td, table th {
-  padding: 8px;
+  padding: 6px;
+  border: 1px solid #000;
   vertical-align: top;
-  border: none; /* remove borders like in PDF */
 }
 
 ol {
-  margin: 0 20px;
-}
-
-table, .form-group, ol {
-  break-inside: avoid;
-  page-break-inside: avoid;
+  margin: 0 25px;
 }
 
 .signature label {
@@ -108,12 +80,12 @@ table, .form-group, ol {
 
 #signaturePreview {
   display: block;
-  max-height: 100px;
+  max-height: 80px;
   margin-top: 10px;
 }
 
 .buttons {
-  margin: 40px 0 20px;
+  margin: 30px 0 20px;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -133,43 +105,18 @@ table, .form-group, ol {
   text-align: center;
   margin-top: 20px;
   font-style: italic;
-  color: #555;
+  color: #444;
 }
 
-/* Hide interactive elements in print */
 @media print {
-  html, body {
-    width: 210mm;
-    height: 297mm;
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-
-  }
-body {
-  font-family: 'Georgia', serif !important;
-  color: black !important;
-  background: white !important;
-}
-
-  * {
-    margin: 0 !important;
-    padding: 0 !important;
-    box-shadow: none !important;
-  }
-
   input {
-    border: none !important;
-    background: transparent !important;
-    outline: none !important;
+    border: none;
+    background: transparent;
   }
 
   .buttons,
-  .thankyou {
+  .thankyou,
+  #signatureUpload {
     display: none !important;
-  }
-
-  .form-group {
-    align-items: center;
-    gap: 5px;
   }
 }
