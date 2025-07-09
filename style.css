@@ -33,7 +33,12 @@ h1, h2, h3 {
   text-align: center;
   margin: 0;
 }
-
+.contact-card {
+  background-color: MediumAquaMarine;
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: #000; /* Optional: ensures text is readable */
+}
 .subheading {
   text-align: center;
   font-size: 14px;
