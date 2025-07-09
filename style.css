@@ -1,6 +1,7 @@
+/* Page setup */
 body {
   font-family: Arial, sans-serif;
-  background: #f0f8ff;
+  background: #f0f8ff; /* Light blue */
   color: black;
   margin: 0;
   padding: 0;
@@ -10,10 +11,11 @@ body {
   margin: 0 auto;
   max-width: 210mm;
   width: 190mm;
-  overflow: hidden;
   background: white;
+  padding: 0;
 }
 
+/* Each printed page */
 .page {
   width: 190mm;
   min-height: 297mm;
@@ -23,18 +25,36 @@ body {
   page-break-after: always;
 }
 
+/* Headings */
 h1, h2, h3 {
   text-align: center;
   margin: 10px 0;
   font-weight: bold;
 }
 
+/* GREEN Headings */
+h2.centered {
+  color: green;
+}
+
+h3.centered {
+  color: red;
+  font-weight: bold;
+}
+
+/* Contact card header */
 .contact-card {
-  background-color: #a8d5ba; /* green like your screenshot */
+  background-color: #d4efdf; /* Mint green */
   padding: 10px 15px;
   border-radius: 6px;
-  color: #000;
+  color: black;
   text-align: center;
+}
+
+.contact-card h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .subheading {
@@ -43,6 +63,7 @@ h1, h2, h3 {
   line-height: 1.4;
 }
 
+/* Form layout */
 .form-group {
   margin: 10px 0;
   display: flex;
@@ -59,10 +80,10 @@ h1, h2, h3 {
 .form-group input[type="text"] {
   min-width: 70px;
   padding: 2px 5px;
-  font-family: inherit;
   font-size: 14px;
 }
 
+/* Tables */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -76,6 +97,7 @@ table td, table th {
   border: 1px solid #333;
 }
 
+/* RED List for "Food to be avoided" */
 ol {
   margin: 0 25px;
   font-size: 14px;
@@ -84,10 +106,12 @@ ol {
   font-weight: bold;
 }
 
+/* Center text when needed */
 .centered {
   text-align: center;
 }
 
+/* Signature section */
 .signature label {
   display: block;
   margin-top: 10px;
@@ -101,6 +125,7 @@ ol {
   border: 1px solid #999;
 }
 
+/* Action buttons */
 .buttons {
   margin: 30px 0 20px;
   display: flex;
@@ -118,6 +143,7 @@ ol {
   color: black;
 }
 
+/* Thank you footer */
 .thankyou {
   text-align: center;
   margin-top: 20px;
@@ -126,6 +152,7 @@ ol {
   font-size: 14px;
 }
 
+/* Print view */
 @media print {
   html, body {
     width: 210mm;
