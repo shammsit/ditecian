@@ -16,7 +16,7 @@ body {
 .page {
   width: 190mm;
   height: 297mm;
-  padding: 0mm 7mm 7.5mm 7mm;
+  padding: 0mm 7mm 0mm 7mm;
   margin-top: 0 !important;
 
   background: white;
