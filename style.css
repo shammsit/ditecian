@@ -9,15 +9,17 @@ body {
   margin: 0 auto;
   max-width: 210mm;
   width: 190mm;
+  overflow: hidden;
+
 }
 
 .page {
   width: 190mm;
   height: 297mm;
-  padding: 10mm;
+  padding: 10mm 7mm;
   margin-top: 0 !important;
 
-  background: blue;
+  background: white;
   box-sizing: border-box;
   page-break-after: always;
   position: relative;
