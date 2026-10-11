@@ -54,6 +54,11 @@
             <mxPoint x="356.57" y="282.9" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="0NUHiK8Cr5M8FPvSiIm8-3" connectable="0" parent="6khRkGIep7DwCaT1yTaJ-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2.4 km&lt;div&gt;47B&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.001" y="-1" as="geometry">
+            <mxPoint x="59" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="6khRkGIep7DwCaT1yTaJ-15" edge="1" parent="1" source="6khRkGIep7DwCaT1yTaJ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="6khRkGIep7DwCaT1yTaJ-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
