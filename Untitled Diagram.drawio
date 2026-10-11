@@ -17,6 +17,11 @@
         <mxCell id="0NUHiK8Cr5M8FPvSiIm8-5" edge="1" parent="1" source="6khRkGIep7DwCaT1yTaJ-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="6khRkGIep7DwCaT1yTaJ-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="0NUHiK8Cr5M8FPvSiIm8-6" connectable="0" parent="0NUHiK8Cr5M8FPvSiIm8-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="6.5 km&lt;div&gt;18C&lt;/div&gt;&lt;div&gt;S-131&lt;/div&gt;&lt;div&gt;M-14&lt;/div&gt;&lt;div&gt;S-3W&lt;/div&gt;&lt;div&gt;S-22&lt;/div&gt;&lt;div&gt;SD76&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0532" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="6khRkGIep7DwCaT1yTaJ-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Rajdanga Naba Uday Sangha" vertex="1">
           <mxGeometry height="40" width="120" x="132" y="262" as="geometry" />
         </mxCell>
