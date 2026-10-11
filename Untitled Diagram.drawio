@@ -29,11 +29,19 @@
         <mxCell id="6khRkGIep7DwCaT1yTaJ-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Rajdanga Naba Uday Sangha" vertex="1">
           <mxGeometry height="40" width="120" x="132" y="262" as="geometry" />
         </mxCell>
+        <mxCell id="0NUHiK8Cr5M8FPvSiIm8-12" edge="1" parent="1" source="6khRkGIep7DwCaT1yTaJ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="6khRkGIep7DwCaT1yTaJ-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NUHiK8Cr5M8FPvSiIm8-13" connectable="0" parent="0NUHiK8Cr5M8FPvSiIm8-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3.8 km | M-14 | S-3W | SD76 | 22" vertex="1">
+          <mxGeometry relative="1" x="-0.4661" y="1" as="geometry">
+            <mxPoint y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="6khRkGIep7DwCaT1yTaJ-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Alipore Sarbojanin Durgotsav" vertex="1">
           <mxGeometry height="40" width="120" x="561" y="330" as="geometry" />
         </mxCell>
         <mxCell id="6khRkGIep7DwCaT1yTaJ-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Behala Club Sarbojonin Durgotsav Comitee" vertex="1">
-          <mxGeometry height="40" width="120" x="553" y="433" as="geometry" />
+          <mxGeometry height="40" width="141" x="551" y="433" as="geometry" />
         </mxCell>
         <mxCell id="6khRkGIep7DwCaT1yTaJ-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Barisha Club" vertex="1">
           <mxGeometry height="40" width="120" x="363" y="546" as="geometry" />
@@ -71,6 +79,11 @@
             <Array as="points">
               <mxPoint x="553" y="453.91" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0NUHiK8Cr5M8FPvSiIm8-11" connectable="0" parent="6khRkGIep7DwCaT1yTaJ-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="7.6 km&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;EB-16&lt;/div&gt;&lt;div&gt;S-D4&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0883" y="3" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="6khRkGIep7DwCaT1yTaJ-8" parent="1" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/home.svg;" value="" vertex="1">
