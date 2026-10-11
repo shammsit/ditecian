@@ -40,6 +40,14 @@
         <mxCell id="6khRkGIep7DwCaT1yTaJ-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Alipore Sarbojanin Durgotsav" vertex="1">
           <mxGeometry height="40" width="120" x="561" y="330" as="geometry" />
         </mxCell>
+        <mxCell id="0NUHiK8Cr5M8FPvSiIm8-14" edge="1" parent="1" source="6khRkGIep7DwCaT1yTaJ-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="6khRkGIep7DwCaT1yTaJ-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NUHiK8Cr5M8FPvSiIm8-15" connectable="0" parent="0NUHiK8Cr5M8FPvSiIm8-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3.2 km&lt;div&gt;3D&lt;/div&gt;&lt;div&gt;C-37&lt;/div&gt;&lt;div&gt;EB-16&lt;/div&gt;&lt;div&gt;SD4 | SD8&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.2468" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="6khRkGIep7DwCaT1yTaJ-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Behala Club Sarbojonin Durgotsav Comitee" vertex="1">
           <mxGeometry height="40" width="141" x="551" y="433" as="geometry" />
         </mxCell>
