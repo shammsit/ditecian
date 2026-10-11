@@ -5,31 +5,36 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="6khRkGIep7DwCaT1yTaJ-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Yuba Sangha, Nagerbazar" vertex="1">
-          <mxGeometry height="40" width="120" x="20" y="240" as="geometry" />
+          <mxGeometry height="40" width="101" x="20" y="240" as="geometry" />
         </mxCell>
         <mxCell id="6khRkGIep7DwCaT1yTaJ-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Rajdanga Amra Kayjan Kalyan Samity" vertex="1">
-          <mxGeometry height="40" width="120" x="270" y="250" as="geometry" />
+          <mxGeometry height="40" width="120" x="258" y="242" as="geometry" />
         </mxCell>
         <mxCell id="6khRkGIep7DwCaT1yTaJ-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Rajdanga Naba Uday Sangha" vertex="1">
           <mxGeometry height="40" width="120" x="550" y="250" as="geometry" />
         </mxCell>
         <mxCell id="6khRkGIep7DwCaT1yTaJ-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Alipore Sarbojanin Durgotsav" vertex="1">
-          <mxGeometry height="40" width="120" x="560" y="390" as="geometry" />
+          <mxGeometry height="40" width="120" x="560" y="408" as="geometry" />
         </mxCell>
         <mxCell id="6khRkGIep7DwCaT1yTaJ-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Behala Club Sarbojonin Durgotsav Comitee" vertex="1">
-          <mxGeometry height="40" width="120" x="550" y="570" as="geometry" />
+          <mxGeometry height="40" width="120" x="550" y="578" as="geometry" />
         </mxCell>
         <mxCell id="6khRkGIep7DwCaT1yTaJ-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Barisha Club" vertex="1">
-          <mxGeometry height="40" width="120" x="280" y="570" as="geometry" />
+          <mxGeometry height="40" width="120" x="273" y="583" as="geometry" />
         </mxCell>
         <mxCell id="6khRkGIep7DwCaT1yTaJ-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Thakurpukur State Bank Park Sarbojonin" vertex="1">
-          <mxGeometry height="40" width="120" x="30" y="580" as="geometry" />
+          <mxGeometry height="40" width="101" x="20" y="583" as="geometry" />
         </mxCell>
         <mxCell id="6khRkGIep7DwCaT1yTaJ-10" edge="1" parent="1" source="6khRkGIep7DwCaT1yTaJ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="6khRkGIep7DwCaT1yTaJ-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="6khRkGIep7DwCaT1yTaJ-11" edge="1" parent="1" source="6khRkGIep7DwCaT1yTaJ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="6khRkGIep7DwCaT1yTaJ-2">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="96.83" y="330.43" />
+              <mxPoint x="317.96" y="330.43" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="6khRkGIep7DwCaT1yTaJ-12" edge="1" parent="1" source="6khRkGIep7DwCaT1yTaJ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="6khRkGIep7DwCaT1yTaJ-4">
           <mxGeometry relative="1" as="geometry" />
@@ -37,9 +42,10 @@
         <mxCell id="6khRkGIep7DwCaT1yTaJ-14" edge="1" parent="1" source="6khRkGIep7DwCaT1yTaJ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="6khRkGIep7DwCaT1yTaJ-3">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="123.78" y="388.96" />
-              <mxPoint x="520.65" y="388.96" />
-              <mxPoint x="520.65" y="290" />
+              <mxPoint x="123.78" y="365.83" />
+              <mxPoint x="405.26" y="365.83" />
+              <mxPoint x="405.26" y="326.35" />
+              <mxPoint x="609.96" y="326.35" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -47,10 +53,21 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="6khRkGIep7DwCaT1yTaJ-16" edge="1" parent="1" source="6khRkGIep7DwCaT1yTaJ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6khRkGIep7DwCaT1yTaJ-6">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="96.83" y="538.52" />
+              <mxPoint x="333" y="538.52" />
+            </Array>
+            <mxPoint x="383.23" y="555.36" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="6khRkGIep7DwCaT1yTaJ-17" edge="1" parent="1" source="6khRkGIep7DwCaT1yTaJ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6khRkGIep7DwCaT1yTaJ-5">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="123.78" y="502" />
+              <mxPoint x="609.96" y="502" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="6khRkGIep7DwCaT1yTaJ-8" parent="1" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/home.svg;" value="" vertex="1">
           <mxGeometry height="116.4" width="120" x="10" y="370" as="geometry" />
