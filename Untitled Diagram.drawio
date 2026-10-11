@@ -30,6 +30,11 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="0NUHiK8Cr5M8FPvSiIm8-2" connectable="0" parent="6khRkGIep7DwCaT1yTaJ-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2.6 km&lt;div&gt;47B&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0259" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="6khRkGIep7DwCaT1yTaJ-12" edge="1" parent="1" source="6khRkGIep7DwCaT1yTaJ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="6khRkGIep7DwCaT1yTaJ-4">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
